@@ -10,7 +10,7 @@ kickstarter = Nokogiri::HTML(html)
 # the selctor for projects: kickstarter.css("li.project.grid_4")
 #the selector for the title: project.css("h2.bbcard_name strong a").text
 # image link: project.css("div.project-thumbnail a img").attribute("src").value
-#describtion: 
+#describtion of an individual project: project.css("p.bbcard_blurb").text
 binding.pry 
 #projects= {} 
 end

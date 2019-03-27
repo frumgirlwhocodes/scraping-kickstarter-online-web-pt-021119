@@ -16,6 +16,7 @@ kickstarter = Nokogiri::HTML(html)
 #to remove percent sign and convert to interger 
  
 projects= {} 
+
 end
 create_project_hash
 

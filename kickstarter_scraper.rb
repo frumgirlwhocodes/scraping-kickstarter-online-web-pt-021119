@@ -16,6 +16,11 @@ kickstarter = Nokogiri::HTML(html)
 #to remove percent sign and convert to interger 
  
 projects= {} 
+ kickstarter.css("li.project.grid_4").each do |project| 
+   projects[project]={} 
+ end 
+ projects 
+ end 
 
 end
 create_project_hash

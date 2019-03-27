@@ -22,10 +22,12 @@ projects= {}
       :description => project.css("p.bbcard_blurb").text,
       :location => project.css("ul.project-meta span.location-name").text,
       :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
-    } 
+    }
+    binding.pry 
  end 
  projects 
  end 
+ 
 
 create_project_hash
 
